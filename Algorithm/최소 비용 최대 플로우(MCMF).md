@@ -17,18 +17,20 @@
 
 이 알고리즘의 로직은 간단하다.
 
-**procedure** Shortest-Path-Faster-Algorithm(_G_, _s_)
-  1    **for** each vertex _v_ ≠ _s_ in _V_(_G_)  // 시작점을 제외한 모든 간선의 거리를 INF로 설정
+```plain text
+procedure Shortest-Path-Faster-Algorithm(_G_, _s_)
+  1    for each vertex _v_ ≠ _s_ in _V_(_G_)  // 시작점을 제외한 모든 간선의 거리를 INF로 설정
   2        d(_v_) := ∞  
   3    d(_s_) := 0 // 시작점의 거리는 0으로 설정
   4    push _s_ into _Q_ // 시작점을 q 에 넣음
-  5    **while** _Q_ is not empty **do** // bfs로 최소 비용 경로 탐색
+  5    while _Q_ is not empty **do** // bfs로 최소 비용 경로 탐색
   6        _u_ := poll _Q_
-  7        **for each** edge (_u_, _v_) in _E_(_G_) **do**
-  8            **if** d(_u_) + w(_u_, _v_) < d(_v_) **then**
+  7        for each edge (_u_, _v_) in _E_(_G_) **do**
+  8            if d(_u_) + w(_u_, _v_) < d(_v_) **then**
   9                d(_v_) := d(_u_) + w(_u_, _v_)
- 10                **if** _v_ is not in _Q_ **then** // 큐에 들어있지 않을 때만 큐에 삽입 (우선순위 큐가 아니기 때문에 필요)
- 11                    push _v_ into _Q_
+ 10                if _v_ is not in _Q_ **then** // 큐에 들어있지 않을 때만 큐에 삽입 (우선순위 큐가 아니기 때문에 필요)
+ 11                    push _v_ into _Q
+```
 
 
 

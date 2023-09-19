@@ -17,7 +17,8 @@
 
 - 톰캣에서 사용되는 NIO Connector는 여러가지 있는데 주요 차이점은 주로 SSL에만 존재한다.
 
-![[/sources/Pasted image 20230918230803.png]]
+<img width="913" alt="image" src="https://github.com/poi1649/learning/assets/74969077/92523daf-4ce8-4177-bf3a-8cfea8f469ba">
+
 
 출처: https://tomcat.apache.org/tomcat-8.5-doc/config/http.html#Connector_Comparison
 

@@ -5,4 +5,5 @@
 
 - `ST_Contains()`와 `ST_Within()` 을 통해 각 공간의 포함 관계를 쉽게 쿼리할 수 있다.
 
-- `ST-Distance_Sphere()` 을 통해 더 정확한 거리도 계산할 수 있다.
+- `ST_Distance_Sphere()` 을 통해 더 정확한 거리도 계산할 수 있다.
+
